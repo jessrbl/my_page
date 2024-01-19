@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="style-about.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="logo"> Jéssica F. </span>
+            <div class="menu-container">
+                <ul class="menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>  
+        <section> 
+            <div class="left-section">
+                <img src="assets/jess.jpg" alt="Minha foto">
+            </div>
+
+            <div class="right-section">
+                <div class="text-container">
+                    <h1>&lt;/ Hello ! &gt; </h1>
+                    <h2>Here is who I am and what I do</h2>
+                    <hr/>
+                </div>
+    
+                <div class="rectangle-1">
+                    <p class="p1"> I'm a Technician in Industrial Chemistry and a Chemical Engineer with a strong background in Materials Engineering and Research and Development (R&D). Currently, I'm Involved in the areas of Transport Phenomena (Thermal Sciences), pursuing a Master's degree in Mechanical Sciences and Engineering at UFSC, with a research project in Combustion Chemical Kinetics. I'm also a member of the LABMCI at UFSC (Internal Combustion Engine Laboratory) and a CAPES Researcher in the same field. <br><br>
+                        My academic journey encompasses a degree in Chemical Engineering from Unisociesc, where I also worked as a Monitor for Calculus I and II, as well as Linear Algebra, Analytical Geometry, and Physics I. Being a monitor for these subjects allowed me to refine my skills in Numerical Analysis and innovative Problem-Solving techniques, enhancing my academic experience. 
+                        <br><br>
+                        I'm a very curious, interested and dedicated person, and a passionate explorer of technology. I also love to learn new things and I have real interest in programming.</p>
+                </div>
+            </div>
+        </section>     
+    </main>
+
+    <footer>
+        <p class="footer-copy"> Copyright &lt;JESSRBL /&lt; 2024 </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const h1 = document.querySelector('.text-container h1');
+            const text = "</ Hello ! > ";
+            let index = 0;
+
+            function type() {
+                h1.innerText = text.substring(0, index);
+                index++;
+
+                if (index <= text.length) {
+                    setTimeout(type, 100); // Ajuste o tempo de digitação conforme necessário
+                } else {
+                    h1.classList.add('typed');
+                }
+            }
+
+            type();
+        });
+    </script>
+
+
+
+    
+</body>
+</html>

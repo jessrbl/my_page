@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Teko&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #090C9B;
+    color: #FEFFF5;
+}
+
+html {
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    max-width: 2000px;
+    padding: 1.5rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #0A0DAE;
+
+}
+
+
+.logo {
+    font-family: Teko;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Adicione esta linha para alinhar à direita */
+}
+
+.menu {
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: row;
+    gap: 1.5rem;
+    color: #B4C5E4;
+}
+
+.menu a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #B4C5E4;
+}
+
+.nav-item {
+    transition: border 0.3s, transform 0.3s;
+    display: inline-block;
+    margin-right: 1rem; 
+}
+
+.nav-item:hover {
+    border: 2px solid #FEFFF5; /* Borda ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+section {
+    background: #090C9B;
+    display: flex;
+    justify-content: space-between; /* Cria um espaço entre os elementos da section */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    padding: 0 4rem; /* Adiciona espaçamento às laterais */
+}
+
+.left-section {
+    display: flex;
+    flex: 30%;
+    align-items: center;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.left-section img {
+    border-radius: 1rem;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: 4rem;
+    width: 80%;
+}
+
+.right-section {
+    flex: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+
+.text-container {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 2.5rem;
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+
+/* Adicione este estilo para simular o cursor de digitação */
+h1::after {
+    content: '|';
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+/* Adicione este estilo para ocultar o cursor quando o texto estiver totalmente digitado */
+h1.typed::after {
+    content: '';
+    animation: none;
+}
+
+/* Adicione uma animação de fade-in apenas para o h1 */
+h1 {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* ... outros estilos permanecem os mesmos ... */
+
+
+
+
+h2 {
+    color: #B4C5E4;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+hr {
+    margin-top: 1.5rem;
+    color: #FEFFF5;   
+}
+
+
+
+.rectangle-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
+
+.rectangle-1 {
+    background-color: #090C9B;
+    margin-top: 2.5rem;
+    color: #FEFFF5;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1.5rem;
+    border: 2px solid; /* Adição de borda com 2 pixels de largura */
+    border-color: #B4C5E4;
+    box-sizing: border-box; /* Garante que a borda seja considerada no tamanho total do elemento */
+    display: flex;
+    flex-direction: column; /* Dispor os elementos internos em coluna */
+}
+
+
+.rectangle-1 p {
+    color: #B4C5E4;
+    text-align: justify; /* Justificar o texto */
+    margin: 0; /* Remover margens padrão do p */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #0A0DAE;
+
+}
+
+.footer-copy {
+    color: #FEFFF5;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    font-weight: 500;
+}

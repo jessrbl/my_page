@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Teko&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #090C9B;
+    color: #FEFFF5;
+}
+
+html {
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    max-width: 2000px;
+    padding: 1.2rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #0A0DAE;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.logo {
+    font-family: Teko;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: row;
+    gap: 1.5rem;
+    color: #B4C5E4;
+}
+
+.menu a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #B4C5E4;
+}
+
+.nav-item {
+    transition: border 0.3s, transform 0.3s;
+}
+
+.nav-item:hover {
+    border: 2px solid #FEFFF5; /* Borda ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+
+.menu-container {
+    margin-left: auto; /* Alinhar à direita */
+    display: flex; /* Adicionado display:flex */
+    align-items: center; /* Adicionado align-items: center */
+}
+
+.principal {
+    background: #090C9B;
+    align-items: center;
+    margin: 0.5rem 4rem 4rem 4rem; /* Ajuste da margem: 2rem no topo, 4rem à direita, 4rem na parte inferior, 4rem à esquerda */
+
+}
+
+
+
+
+.hero {
+
+        max-width: 1400px;
+        height: 60vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0rem 2rem;
+        overflow: hidden;
+        justify-content: flex-end;
+        margin: 2rem 0;
+        align-items: center; /* Ajuste para alinhar à direita */
+
+}
+
+.hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8rem; 
+    margin-left: 9rem;
+    /* Adicione um espaçamento à direita de 2rem */
+}
+
+hr {
+    color: #FEFFF5
+}
+h1 {
+    font-family: sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+
+h1.typing-animation {
+    margin-bottom: 0; /* Reduz a margem inferior do h1 para zero */
+}
+
+.hi {
+    color: #FEFFF5; /* Cor para "Hi, I'm" */
+}
+
+@keyframes moveBox {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px); /* ou qualquer valor desejado */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.typing-animation {
+    display: inline-block;
+    font-family: sans-serif; /* Ajuste conforme necessário */
+    margin-bottom: 0.5rem; /* Ajuste a margem inferior conforme necessário */
+
+}
+
+.name {
+    display: inline-block;
+    border: 2px solid #3066BE; /* Cor da borda ao redor do nome */
+    padding: 5px; /* Espaçamento interno */
+    animation: moveBox 3s infinite; /* 3s é a duração da animação */
+}
+
+
+
+
+
+h2 {
+        font-family: sans-serif;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        margin-top: 0;
+    }
+
+p {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: #B4C5E4;
+}
+
+.find-me {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #B4C5E4;
+    margin-bottom: 4rem;
+}
+
+.hero-conteudo .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Ajuste conforme necessário para a distância entre as imagens */
+}
+
+/* Estilo específico para os botões dentro de .icons (pode ajustar conforme necessário) */
+.hero-conteudo .icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* Remova o preenchimento padrão do botão */
+}
+
+/* Estilo específico para as imagens dentro de .icons (pode ajustar conforme necessário) */
+.hero-conteudo .icons button img {
+    width: 3rem; /* Ajuste o tamanho conforme necessário */
+    height: 3rem; /* Ajuste o tamanho conforme necessário */
+    color: #3066BE; /* Substitua #3066BE pela cor desejada em formato hexadecimal, RGB, etc. */
+    transition: transform 0.2s ease-in-out; /* Adicione uma transição de suavização ao hover */
+}
+
+/* Adicione um efeito de escala suave ao passar o mouse sobre a imagem */
+.hero-conteudo .icons button:hover img {
+    transform: scale(1.2);
+}
+
+/* Adicione ao seu CSS */
+
+.hero-image>figure {
+    max-width: 85%;
+}
+
+.hero-image>figure>img {
+    width: 85%;
+
+}
+
+footer {
+    background: #0A0DAE;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-copy {
+    color: #FEFFF5;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    font-weight: 500;
+}
