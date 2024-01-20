@@ -215,3 +215,86 @@ footer {
     font-family: sans-serif;
     font-weight: 500;
 }
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 1.5rem 2rem; 
+        
+    }
+
+
+.logo {
+        font-size: 2rem;
+    }
+
+
+    .menu {
+        align-items: center; /* Centralize os itens do menu */
+    }
+
+    .nav-item {
+        margin-right: 0; /* Remova a margem à direita em telas menores */
+        margin-bottom: 1rem; /* Adicione margem inferior entre os itens do menu em telas menores */
+    }
+
+    section {
+        display: block;
+        flex-direction: row; /* Altere para empilhar os elementos da section verticalmente em telas menores */
+        padding: 0 2rem; /* Adicione espaçamento às laterais */
+    }
+
+    .left-section {
+        flex: 100%; /* Altere para ocupar 100% da largura da tela em telas menores */
+        padding: 0; /* Remova o padding em telas menores */
+        text-align: center; /* Centralize o texto na tela */
+        max-width: 100%; 
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+    }
+
+    .left-section img {
+        align-items: center;
+        width: 50%; /* Ocupar 100% da largura do contêiner pai */
+        margin-top: 2rem; /* Ajuste da margem superior */
+
+    }
+    
+
+    .right-section {
+        flex: 100%; /* Altere para ocupar 100% da largura da tela em telas menores */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduza o tamanho da fonte para telas menores */
+        margin-top: 1.5rem; /* Ajuste da margem superior */
+    }
+
+    h2 {
+        font-size: 1rem; /* Reduza o tamanho da fonte para telas menores */
+        margin-top: 1rem; /* Ajuste da margem superior */
+    }
+
+    hr {
+        margin-top: 0.5rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+    .rectangle-1 {
+        margin-top: 1rem; /* Ajuste da margem superior */
+    }
+
+    footer {
+        padding: 1rem 2rem; /* Ajuste do padding para telas menores */
+    }
+
+    .footer-copy {
+        font-size: 0.6rem; /* Reduza o tamanho da fonte para telas menores */
+    }
+}
+
