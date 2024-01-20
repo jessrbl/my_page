@@ -219,6 +219,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     nav {
+
         padding: 0.5rem 2rem; 
         
     }
@@ -226,19 +227,17 @@ footer {
 
 .logo {
         font-size: 1.5rem;
+        margin-right: 1rem;
+        margin-left: 0; /* Remova a margem à esquerda em telas menores */
     }
 
 
     .menu {
-        margin-top: 0.8rem;
+        margin-top: 0.1rem;
         align-items: center; /* Centralize os itens do menu */
         font-size: 0.8rem; /* Reduza o tamanho da fonte para telas menores */
     }
-
-    .nav-item {
-        margin-right: 0; /* Remova a margem à direita em telas menores */
-        margin-bottom: 1rem; /* Adicione margem inferior entre os itens do menu em telas menores */
-    }
+   
 
     section {
         display: block;
@@ -256,6 +255,7 @@ footer {
         justify-content: center;
         padding: 0;
         text-align: center;
+        margin-top: 0.2rem;
     }
 
     .left-section img {
@@ -291,12 +291,15 @@ footer {
         margin-top: 1rem; /* Ajuste da margem superior */
     }
 
-    footer {
-        padding: 1rem 2rem; /* Ajuste do padding para telas menores */
+    .footer {
+        width: 100%; /* Altere para ocupar 100% da largura da tela em telas menores */
+        padding: 0.2rem;
     }
 
     .footer-copy {
-        font-size: 0.6rem; /* Reduza o tamanho da fonte para telas menores */
+        font-size: 0.5rem;
+        text-align: center;
+        align-items: center;
     }
 }
 
