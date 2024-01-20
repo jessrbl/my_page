@@ -81,6 +81,7 @@ main {
 }
 
 .principal {
+    min-height: 100vh;
     background: #090C9B;
     align-items: center;
     margin: 0.5rem 4rem 4rem 4rem; /* Ajuste da margem: 2rem no topo, 4rem à direita, 4rem na parte inferior, 4rem à esquerda */
@@ -241,4 +242,117 @@ footer {
     font-size: 0.7rem;
     font-family: sans-serif;
     font-weight: 500;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        max-width: 1000px;
+        padding: 0.5rem 2rem;
+    }
+
+
+
+    
+.logo {
+    display: flex;
+    font-size: 1rem;
+    margin-right: 2rem;
+    margin-left: 0rem;
+    align-items: center;
+}
+
+.menu {
+    gap: 0.5rem;
+    font-size: 0.6rem;
+    align-items: right;
+}
+
+
+.menu-container {
+    margin-left: auto; /* Alinhar à direita */
+    display: flex; /* Adicionado display:flex */
+    align-items: right; /* Adicionado align-items: center */
+}
+
+
+.footer{
+    position: fixed;
+    padding: 0.2rem;
+}
+
+.footer-copy {
+    font-size: 0.7rem;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+h1 {
+    font-size: 4rem;
+}
+
+
+.principal {
+    flex: 1;
+    display: block;
+    margin: 3rem 0.5rem 0.3rem 0.5rem; /* Ajuste da margem: 2rem no topo, 4rem à direita, 4rem na parte inferior, 4rem à esquerda */
+}
+
+.hero {
+        width: 135vw;
+}
+
+.hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem; 
+    margin-left: 1rem;
+    /* Adicione um espaçamento à direita de 2rem */
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+
+
+h2 {
+    font-size: 0.8rem;
+}
+
+p {
+font-family: sans-serif;
+font-size: 0.5rem;
+}
+
+.find-me {
+font-family: sans-serif;
+font-size: 0.5rem;
+margin-bottom: 1rem;
+}
+
+/* Estilo específico para as imagens dentro de .icons (pode ajustar conforme necessário) */
+.hero-conteudo .icons button img {
+width: 1rem; /* Ajuste o tamanho conforme necessário */
+height: 1rem; /* Ajuste o tamanho conforme necessário */
+margin-bottom: 4rem;
+}
+
+
+.hero-image>figure {
+    max-width: 65%;
+    margin-top: 0.1rem;
+    margin-bottom: 6rem;
+}
+
+.hero-image>figure>img {
+    width: 65%;
+
+}
+
+
+
 }
