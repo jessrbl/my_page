@@ -219,18 +219,20 @@ footer {
 
 @media screen and (max-width: 768px) {
     nav {
-        padding: 1.5rem 2rem; 
+        padding: 0.5rem 2rem; 
         
     }
 
 
 .logo {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
 
     .menu {
+        margin-top: 0.8rem;
         align-items: center; /* Centralize os itens do menu */
+        font-size: 0.8rem; /* Reduza o tamanho da fonte para telas menores */
     }
 
     .nav-item {
@@ -258,7 +260,7 @@ footer {
 
     .left-section img {
         align-items: center;
-        width: 50%; /* Ocupar 100% da largura do contêiner pai */
+        width: 40%; /* Ocupar 100% da largura do contêiner pai */
         margin-top: 2rem; /* Ajuste da margem superior */
 
     }
@@ -269,13 +271,13 @@ footer {
     }
 
     h1 {
-        font-size: 1.5rem; /* Reduza o tamanho da fonte para telas menores */
+        font-size: 1.2rem; /* Reduza o tamanho da fonte para telas menores */
         margin-top: 1.5rem; /* Ajuste da margem superior */
     }
 
     h2 {
-        font-size: 1rem; /* Reduza o tamanho da fonte para telas menores */
-        margin-top: 1rem; /* Ajuste da margem superior */
+        font-size: 0.8rem; /* Reduza o tamanho da fonte para telas menores */
+        margin-top: 0.3rem; /* Ajuste da margem superior */
     }
 
     hr {
@@ -283,7 +285,7 @@ footer {
     }
 
     p {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .rectangle-1 {
         margin-top: 1rem; /* Ajuste da margem superior */
