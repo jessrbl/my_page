@@ -247,112 +247,82 @@ footer {
 
 @media screen and (max-width: 768px) {
     nav {
-        max-width: 1000px;
-        padding: 0.5rem 2rem;
+        width: 100%; /* Altere para ocupar 100% da largura da tela em telas menores */
+        padding: 0.5rem 2rem; /* Reduza o padding para telas menores */
     }
 
+    .logo {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        margin-left: 0; /* Remova a margem à esquerda em telas menores */
+    }
 
+    .menu {
+        gap: 0.5rem;
+        font-size: 0.8rem; /* Reduza o tamanho da fonte para telas menores */
+    }
 
-    
-.logo {
-    display: flex;
-    font-size: 1rem;
-    margin-right: 2rem;
-    margin-left: 0rem;
-    align-items: center;
-}
+    .menu-container {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
 
-.menu {
-    gap: 0.5rem;
-    font-size: 0.6rem;
-    align-items: right;
-}
+    .footer {
+        width: 100%; /* Altere para ocupar 100% da largura da tela em telas menores */
+        padding: 0.2rem;
+    }
 
+    .footer-copy {
+        font-size: 0.7rem;
+        text-align: center;
+        align-items: center;
+    }
 
-.menu-container {
-    margin-left: auto; /* Alinhar à direita */
-    display: flex; /* Adicionado display:flex */
-    align-items: right; /* Adicionado align-items: center */
-}
+    h1 {
+        font-size: 2rem; /* Reduza o tamanho da fonte para telas menores */
+    }
 
+    .principal {
+        width: 100%;
+        margin: 1rem 0.5rem; /* Ajuste da margem para telas menores */
+    }
 
-.footer{
-    position: fixed;
-    padding: 0.2rem;
-}
+    .hero {
+        width: 100%;
+    }
 
-.footer-copy {
-    font-size: 0.7rem;
-    text-align: center;
-    align-items: center;
-}
+    .hero-conteudo {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
 
+    h1 {
+        font-size: 2rem; /* Reduza o tamanho da fonte para telas menores */
+    }
 
+    h2 {
+        font-size: 1rem; /* Reduza o tamanho da fonte para telas menores */
+    }
 
-h1 {
-    font-size: 4rem;
-}
+    p {
+        font-size: 0.8rem; /* Reduza o tamanho da fonte para telas menores */
+    }
 
+    .find-me {
+        font-size: 0.8rem; /* Reduza o tamanho da fonte para telas menores */
+        margin-bottom: 1rem;
+    }
 
-.principal {
-    flex: 1;
-    display: block;
-    margin: 3rem 0.5rem 0.3rem 0.5rem; /* Ajuste da margem: 2rem no topo, 4rem à direita, 4rem na parte inferior, 4rem à esquerda */
-}
+    .hero-conteudo .icons button img {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 
-.hero {
-        width: 135vw;
-}
-
-.hero-conteudo {
-    display: flex;
-    flex-direction: column;
-    margin-right: 2rem; 
-    margin-left: 1rem;
-    /* Adicione um espaçamento à direita de 2rem */
-}
-
-h1 {
-    font-family: sans-serif;
-    font-size: 2rem;
-}
-
-
-
-h2 {
-    font-size: 0.8rem;
-}
-
-p {
-font-family: sans-serif;
-font-size: 0.5rem;
-}
-
-.find-me {
-font-family: sans-serif;
-font-size: 0.5rem;
-margin-bottom: 1rem;
-}
-
-/* Estilo específico para as imagens dentro de .icons (pode ajustar conforme necessário) */
-.hero-conteudo .icons button img {
-width: 1rem; /* Ajuste o tamanho conforme necessário */
-height: 1rem; /* Ajuste o tamanho conforme necessário */
-margin-bottom: 4rem;
-}
-
-
-.hero-image>figure {
-    max-width: 65%;
-    margin-top: 0.1rem;
-    margin-bottom: 6rem;
-}
-
-.hero-image>figure>img {
-    width: 65%;
-
-}
-
-
-
+    .hero-image>figure {
+        max-width: 100%;
+        margin-top: 0.1rem;
+        margin-bottom: 1rem;
+    }
 }
